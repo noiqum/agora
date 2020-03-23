@@ -1,0 +1,149 @@
+@import "../variables/variables";
+
+header{
+    background-image: linear-gradient(to right,$blue-dark ,$blue-light 30%,$green-light,$green-dark);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 10vh;
+}
+
+.nav{
+    color: $yellow;
+
+    &__logo {
+        margin:0.5rem;
+        color:$yellow;
+        text-transform: uppercase;
+    }
+    &__toggle{
+        display: none;
+    }
+    &__toggle:checked ~ nav{
+        display: block;
+    }
+    
+    &__nav{
+        display: none;
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        background-image: linear-gradient(to right,$blue-dark ,$blue-light 30%,$green-light,$green-dark);
+        width: 100%;
+        height: auto;
+        left: 0;
+
+        &-a{
+            //event and people part
+            &-ul{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 1rem;
+                & li{
+                    list-style: none;
+                    margin-bottom: 1rem;
+                    margin-left: 1rem;
+                    & a{
+                        text-decoration: none;
+                        color: $yellow;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        border-bottom: 1px solid orange;
+                        &:hover{
+                            color: orange;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-b{
+            margin-top: 2rem;
+            //authentication buttons
+            &-ul{
+                display: flex;
+                
+                & li{
+                    list-style: none;
+                    margin-bottom: 2rem;
+                    margin-left: 1rem;
+                    flex: 1;
+                    
+
+                    & a{
+                        text-decoration: none;
+                        color: $yellow;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-size: 1.6rem;
+                        border: 1px solid orange;
+                        padding: 0.5rem 1rem;
+                        border-radius: 2px;
+                        
+                        &:hover{
+                            color:white;
+                            border: 5px solid orange;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-label{
+            //responsive navbar burger button
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-left: 1rem;
+            
+            display: flex;
+            height: 100%;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+
+
+            // & span,
+            // & span::before,
+            // & span::after{
+            //     display: block;
+            //     height: 3px;
+            //     width: 3.2rem;
+            //     background: $yellow;
+            //     border-radius: 2px;
+            //     position: relative;
+            // }
+
+            // & span::before,
+            // & span::after{
+            //     content: '';
+            //     position: absolute;
+            // }
+
+            // & span::before{
+            //     bottom: 7px;
+            // }
+            
+            // & span::after{
+            //     top: 7px;
+            // }
+            
+            & span{
+                background-color: $yellow;
+                height: 3px;
+                width: 3.2rem;
+                border-radius: 3px;
+                margin: 2px;
+            }
+
+        }
+    
+    }
+
+    
+
+}
+

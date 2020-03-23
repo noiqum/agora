@@ -1,0 +1,90 @@
+header {
+  background-image: linear-gradient(to right, #05668d, #028090 30%, #02c39a, #00a896);
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  height: 10vh; }
+
+.nav {
+  color: #f0f3bd; }
+  .nav__logo {
+    margin: 0.5rem;
+    color: #f0f3bd;
+    text-transform: uppercase; }
+  .nav__toggle {
+    display: none; }
+  .nav__toggle:checked ~ nav {
+    display: block; }
+  .nav__nav {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    background-image: linear-gradient(to right, #05668d, #028090 30%, #02c39a, #00a896);
+    width: 100%;
+    height: auto;
+    left: 0; }
+    .nav__nav-a-ul {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1rem; }
+      .nav__nav-a-ul li {
+        list-style: none;
+        margin-bottom: 1rem;
+        margin-left: 1rem; }
+        .nav__nav-a-ul li a {
+          text-decoration: none;
+          color: #f0f3bd;
+          font-size: 2rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          border-bottom: 1px solid orange; }
+          .nav__nav-a-ul li a:hover {
+            color: orange; }
+    .nav__nav-b {
+      margin-top: 2rem; }
+      .nav__nav-b-ul {
+        display: flex; }
+        .nav__nav-b-ul li {
+          list-style: none;
+          margin-bottom: 2rem;
+          margin-left: 1rem;
+          flex: 1; }
+          .nav__nav-b-ul li a {
+            text-decoration: none;
+            color: #f0f3bd;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1.6rem;
+            border: 1px solid orange;
+            padding: 0.5rem 1rem;
+            border-radius: 2px; }
+            .nav__nav-b-ul li a:hover {
+              color: white;
+              border: 5px solid orange; }
+    .nav__nav-label {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-left: 1rem;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .nav__nav-label span {
+        background-color: #f0f3bd;
+        height: 3px;
+        width: 3.2rem;
+        border-radius: 3px;
+        margin: 2px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif; }

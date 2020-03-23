@@ -106,30 +106,7 @@ header{
 
 
 
-            // & span,
-            // & span::before,
-            // & span::after{
-            //     display: block;
-            //     height: 3px;
-            //     width: 3.2rem;
-            //     background: $yellow;
-            //     border-radius: 2px;
-            //     position: relative;
-            // }
-
-            // & span::before,
-            // & span::after{
-            //     content: '';
-            //     position: absolute;
-            // }
-
-            // & span::before{
-            //     bottom: 7px;
-            // }
             
-            // & span::after{
-            //     top: 7px;
-            // }
             
             & span{
                 background-color: $yellow;
@@ -147,3 +124,102 @@ header{
 
 }
 
+@media screen and (min-width:800px){
+
+
+    .nav{
+
+        &__nav-label{
+            display: none;
+        }
+        &__logo{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            grid-column: 1 /span 1;
+            padding-left: 3rem;
+        }
+        &__nav{
+            all: unset;
+            grid-column: 2/4;
+            color: $yellow;
+            font-size: 2rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+             
+
+
+            //unset all css properties that belong responsive version of app
+            &-a,
+            &-b,
+            &-b-ul,
+            &-a-ul,
+            &-a-ul li,
+            &-b-ul li,
+            &-a li,
+            &-b li
+            {
+                all: unset;
+            }
+            &-a-ul li a{
+                all: unset;
+            }
+            &-b-ul li a{
+                all: unset;
+            }
+            &-a-ul li a:hover{
+                all: unset;
+            }
+            &-b-ul li a:hover{
+                all: unset;
+            }
+            //unset part end-----------------
+
+            //event and people buttons part start---
+           &-a{
+
+            &-ul{
+
+                & li{
+                    padding: 0.5rem 1rem;
+                    margin: 0.5rem;
+                    margin-right: 5rem;
+                    border: 1px solid transparent;
+                    
+                    transition: border 0.3s ease-in;
+                    &:hover{
+                        border: 1px solid orange;
+
+                    }
+                }
+            }
+           }
+           //authentication buttons part start-----
+           &-b{
+
+            &-ul{
+
+                & li{
+                    padding: 0.5rem 1rem;
+                    margin: 0.5rem;
+                    border-radius: 3px;
+                    border: 1px solid $yellow;
+
+                    &:hover{
+                        color:$blue-dark;
+                        border-color: $blue-dark;
+                    }
+                }
+            }
+           }
+        }
+
+    }
+    header{
+        display: grid;
+        grid-template-columns: 20% minmax(600px,1fr) 1fr;
+    }
+
+}

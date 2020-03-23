@@ -80,6 +80,58 @@ header {
         border-radius: 3px;
         margin: 2px; }
 
+@media screen and (min-width: 800px) {
+  .nav__nav-label {
+    display: none; }
+  .nav__logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    grid-column: 1 /span 1;
+    padding-left: 3rem; }
+  .nav__nav {
+    all: unset;
+    grid-column: 2/4;
+    color: #f0f3bd;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .nav__nav-a, .nav__nav-b, .nav__nav-b-ul, .nav__nav-a-ul,
+    .nav__nav-a-ul li,
+    .nav__nav-b-ul li,
+    .nav__nav-a li,
+    .nav__nav-b li {
+      all: unset; }
+    .nav__nav-a-ul li a {
+      all: unset; }
+    .nav__nav-b-ul li a {
+      all: unset; }
+    .nav__nav-a-ul li a:hover {
+      all: unset; }
+    .nav__nav-b-ul li a:hover {
+      all: unset; }
+    .nav__nav-a-ul li {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      margin-right: 5rem;
+      border: 1px solid transparent;
+      transition: border 0.3s ease-in; }
+      .nav__nav-a-ul li:hover {
+        border: 1px solid orange; }
+    .nav__nav-b-ul li {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #f0f3bd; }
+      .nav__nav-b-ul li:hover {
+        color: #05668d;
+        border-color: #05668d; }
+  header {
+    display: grid;
+    grid-template-columns: 20% minmax(600px, 1fr) 1fr; } }
+
 * {
   margin: 0;
   padding: 0;

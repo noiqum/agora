@@ -1,0 +1,58 @@
+@import '../variables/variables';
+
+.event__form{
+    margin-top: 2rem;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 2rem;
+    background-color: rgb(245, 244, 244);
+    border: 1px solid $grey;
+    border-radius: 10px;
+
+    
+
+    & > input{
+        margin: 0.5rem;
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        background-color:transparent;
+        text-transform: capitalize;
+        letter-spacing: 0.5;
+        font-size: 1.7rem;
+        box-shadow: none;
+        outline: none;
+        
+    }
+
+   
+
+    &__buttons{
+        padding: 2rem  1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        & > button{
+            background-color: $green-dark;
+            padding: 1rem 2rem;
+            display: inline-block;
+            width: 40%;
+            border-radius: 5px;
+            border: 1px solid $blue-dark;
+            color: $yellow;
+
+            &:hover{
+                background-color: black;
+                opacity: 0.55;
+                color: white;
+            }
+        }
+    }
+    
+}
+
+

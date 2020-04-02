@@ -1,6 +1,10 @@
 @import "./variables/variables";
 @import "./components-sass/nav";
-
+@import "./components-sass/main";
+@import "./components-sass/event-dash-board";
+@import "./components-sass/event-list";
+@import "./components-sass/event-item";
+@import "./components-sass/event-form";
 
 *{
     margin: 0;
@@ -10,7 +14,7 @@
 }
 
 :root{
-    
+
     font-size: 10px;
     
 
@@ -18,3 +22,4 @@
 
 
 }
+

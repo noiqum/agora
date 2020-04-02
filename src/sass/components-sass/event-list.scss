@@ -1,0 +1,27 @@
+@import '../variables/variables';
+
+
+.event-list{
+    grid-column: 3/4;
+    width: 100%;
+    
+
+    &__button{
+        
+        background-color: $green-dark;
+        text-align: center;
+        padding: 1rem 2rem;
+        color: $yellow;
+        font-size: 1.7rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.75;
+        }
+        
+    }
+}
+

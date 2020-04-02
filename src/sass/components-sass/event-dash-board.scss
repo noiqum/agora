@@ -1,0 +1,16 @@
+@import "../variables/variables";
+
+
+.dash-board{
+    grid-column: 2/3;
+    width: 80%;
+    
+    
+
+    & h1{
+        color: $blue-dark;
+        text-transform: uppercase;
+        font-family: inherit;
+        padding: 1rem 2rem;
+    }
+}

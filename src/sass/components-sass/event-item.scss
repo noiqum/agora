@@ -1,0 +1,75 @@
+@import "../variables/variables.scss";
+
+
+.event-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    margin: 1rem auto;
+    width: 90%;
+    height: auto;
+    border: 2px solid grey;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.568);
+    border-radius: 3px;
+
+    &__host,
+    &__date,
+    &__attendee,
+    &__description{
+        border-bottom: 1px solid grey;
+    }
+    
+
+    &__host{
+        width: 100%;
+        background-color: #c4c4c454;
+        padding: 1rem 2rem;
+        
+        &-pic{
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+    }
+
+    &__date{
+        background-color: #c4c4c465;
+        padding: 1rem 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    &__attendee{
+        background-color: #c4c4c47a;
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+    &__description{
+        width: 100%;
+        padding: 2rem 3rem;
+        position: relative;
+        background-color: #c4c4c479;
+        & button{
+            position: absolute;
+            top: 40%;
+            right: 0px;
+            transform: translateY(-50%);
+            margin: 1rem;
+            background-color: $blue-light;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            color: $yellow;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+
+            &:hover{
+                opacity: 0.80;
+            }
+        }
+
+    }
+}
